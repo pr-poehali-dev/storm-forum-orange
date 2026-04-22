@@ -1,0 +1,1 @@
+CREATE TABLE forum_topics (id SERIAL PRIMARY KEY, category_id INT NOT NULL, author_id INT NOT NULL, title TEXT NOT NULL)

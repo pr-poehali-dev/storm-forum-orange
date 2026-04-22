@@ -1,0 +1,26 @@
+{
+  "tests": [
+    {
+      "name": "Get categories",
+      "method": "GET",
+      "path": "/?action=categories",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get forum stats",
+      "method": "GET",
+      "path": "/?action=stats",
+      "expectedStatus": 200,
+      "expectedBody": {"users_count": 1},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Search topics",
+      "method": "GET",
+      "path": "/?action=search&q=test",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    }
+  ]
+}

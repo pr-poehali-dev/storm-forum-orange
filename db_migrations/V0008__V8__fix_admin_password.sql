@@ -1,0 +1,1 @@
+UPDATE forum_users SET password_hash = 'sha256:groza_forum_salt_2024:0b14d501a594442a01c6859541b2d233fef5efa9c1bb4156a98f4b4a7b0d9b38' WHERE username = 'admin'

@@ -1,0 +1,20 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS CORS",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Login admin",
+      "method": "POST",
+      "path": "/?action=login",
+      "body": {"username": "admin", "password": "admin123"},
+      "expectedStatus": 200,
+      "expectedBody": {"session_id": "string"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
